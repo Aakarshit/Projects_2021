@@ -1,0 +1,240 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* navigation bar Logo and Image */
+#logo{
+    margin:5px 35px;
+}
+#logo img{
+    height:80px;
+    margin: 5px 10px;
+}
+/* List Styling */
+#navbar::before{
+    content:"";
+    background-color:#fb8500;
+    position :absolute;
+    height:50%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.2;
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    text-shadow: black;
+    color: white;
+   display: block;
+   padding: 3px 15px;
+   border-radius:20px;
+   text-decoration: none;
+ }
+ #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+ }
+/* Home Section */
+#home h2{
+    font-family: 'Akaya Telivigala', cursive;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    background:url('../6.png') no-repeat center center/cover ;
+    position :absolute;
+    height:100%;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.3;
+}
+#home h2{
+    color:black;
+    text-align: center;
+}
+#home p{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.2rem;;
+}
+/* Contact Section */
+.contact{
+    position:relative;
+    margin-top: 25px;
+}
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+.contact::before{
+    content:"";
+    position: absolute;
+    z-index:-1 ;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('../7.jpg') no-repeat center top/cover;
+}
+.contact h1{
+    font-family: 'Akaya Telivigala', cursive ;
+}
+form{
+    font-family:  'Akaya Telivigala', cursive;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    }
+    .contact-box input,
+    .contact-box textarea{
+        width: 300px;
+        padding:0.5rem;
+        border-radius: 9px;
+        font-size: 20px;
+    }
+    .contact-box form{
+        width:300px;
+    }
+    .contact-box label{
+        font-size: 1.5rem;
+    }
+    
+/* services section   */
+
+#services{
+    margin:10px 10px 5px 5px;
+    display: flex;
+}
+.box h2{
+    font-family: 'Akaya Telivigala', cursive;
+    color:darkslategrey;
+}
+#services .box:hover{
+    background-color: dimgray;
+}
+.services-container h1{
+     font-family: 'Akaya Telivigala', cursive;
+     color: darkslategrey;
+}
+#services .box{
+     border:2px solid black;
+     border-radius: 9px ;
+     margin:5px;
+     padding:10px;
+     background-color:#fae4cb;
+}
+#services .box img{
+    width:300px;
+    height:200px;
+    margin: 10px auto 20px;
+    display: block;
+}
+/* utility classes */
+.h-primary{
+    text-align: center;
+    font-size: 2.5rem;
+    padding:12px;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 2.5rem;
+    padding:12px;
+}
+.services-container p{
+    font-family:'Akaya Telivigala', cursive ;
+}
+
+.btn{
+    padding:6px 20px;
+    border: 3px solid black;
+    background-color: #b76935;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* clients section */
+.clients{
+    display: flex;  
+    margin:10px 10px 5px 5px;
+}
+.client-items img{
+    width:300px;
+    height:200px;
+    margin: 10px auto 20px;
+    display: block;
+}
+.clients .client-items{
+    border: black solid 2px;
+    border-radius: 9px;
+   background-color:#fae4cb;
+   padding:10px;
+  margin:5px;
+}
+.clients h2{
+    font-family:'Akaya Telivigala', cursive ;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 2.5rem;
+    padding:12px;
+}
+.clients p{
+    font-family:'Akaya Telivigala', cursive ;
+}
+#client-section h1{
+    color: darkslategrey;
+    font-family:'Akaya Telivigala', cursive ;
+
+}
+#client-section{
+    margin-top:25px;
+}
+.clients .client-items:hover{
+background-color: dimgrey;
+}
+footer{
+    background-color: black;
+    color: white;
+}
