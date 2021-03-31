@@ -1,4 +1,0 @@
-1. tot_cust=30
-no_of_cust_complain=10
-prob_exactly_ten=no_of_cust_complain/tot_cust
-print("probability of exactly ten customers complaining is {}%".format(round(prob_exactly_ten,2)*100))
