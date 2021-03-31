@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    margin:12px auto;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+.myInput{
+    width:300px ;
+    padding: 5px;
+    margin: 10px 0px;
+    font-size: 14px;
+    border:2px solid rgb(43, 5, 5);
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    padding: 5px 12px;
+    border: 2px solid black;
+    margin:10px 0px;
+    border-radius: 10px;
+    color:white;
+    background-color: black;
+    cursor:pointer;
+}
+
