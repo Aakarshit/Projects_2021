@@ -17,7 +17,7 @@ const contactSchema = new mongoose.Schema({
  
 
 
-const port=80;
+const port=process.env.PORT || 8000;
 const app=express();
 
 app.use('/static', express.static('static'));
